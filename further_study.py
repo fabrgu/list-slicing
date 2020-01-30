@@ -199,8 +199,12 @@ def custom_count(input_list, value):
         2
 
     """
+    item_count = 0
+    for i in input_list:
+        if(i == value):
+            item_count += 1
 
-    return 0
+    return item_count
 
 
 def custom_reverse(input_list):
