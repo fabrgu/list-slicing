@@ -110,6 +110,8 @@ def custom_insert(input_list, index, value):
 
     """
 
+    input_list[index:index] = [value]
+
     pass
 
 
@@ -128,6 +130,12 @@ def custom_remove(input_list, value):
         True
 
     """
+    count = 0
+    for i in input_list:
+        if i == value:
+            input_list[count: count+1] = []
+            break;
+        count += 1
 
     pass
 
