@@ -67,7 +67,7 @@ def custom_append(input_list, value):
 
     input_list[count:] = [value]
 
-    pass
+    return None
 
 
 def custom_extend(input_list, second_list):
@@ -92,7 +92,7 @@ def custom_extend(input_list, second_list):
 
     input_list[count:] = second_list
 
-    pass
+    return None
 
 
 def custom_insert(input_list, index, value):
@@ -112,7 +112,7 @@ def custom_insert(input_list, index, value):
 
     input_list[index:index] = [value]
 
-    pass
+    return None
 
 
 def custom_remove(input_list, value):
@@ -137,7 +137,7 @@ def custom_remove(input_list, value):
             break
         count += 1
 
-    pass
+    return None
 
 
 def custom_pop(input_list):
@@ -185,7 +185,6 @@ def custom_index(input_list, value):
         index += 1
 
     return index
-
 
 
 def custom_count(input_list, value):
