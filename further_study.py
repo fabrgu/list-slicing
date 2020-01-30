@@ -174,12 +174,18 @@ def custom_index(input_list, value):
 
     For example:
 
-        >>> custom_index(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'], 'Re')
-        1
+    >>> custom_index(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'], 'Re')
+    1
 
     """
+    index = 0
+    for i in input_list:
+        if i == value:
+            break
+        index += 1
 
-    return 0
+    return index
+
 
 
 def custom_count(input_list, value):
