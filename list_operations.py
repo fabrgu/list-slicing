@@ -83,7 +83,7 @@ def first_three(input_list):
 
     """
 
-    return []
+    return input_list[:3]
 
 
 def last_five(input_list):
@@ -96,7 +96,7 @@ def last_five(input_list):
 
     """
 
-    return []
+    return input_list[len(input_list)-5:]
 
 
 def middle(input_list):
@@ -109,7 +109,7 @@ def middle(input_list):
 
     """
 
-    return []
+    return input_list[2:-2]
 
 
 def inner_four(input_list):
@@ -122,7 +122,7 @@ def inner_four(input_list):
 
     """
 
-    return []
+    return input_list[2:6]
 
 
 def inner_four_end(input_list):
