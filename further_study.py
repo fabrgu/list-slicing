@@ -134,7 +134,7 @@ def custom_remove(input_list, value):
     for i in input_list:
         if i == value:
             input_list[count: count+1] = []
-            break;
+            break
         count += 1
 
     pass
@@ -155,8 +155,15 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
+    count = 0
+    popped_item_list = None
+    for i in input_list:
+        count += 1
 
-    return None
+    popped_item_list = input_list[count-1: count]
+    input_list[count-1: count] = []
+
+    return popped_item_list[0]
 
 
 def custom_index(input_list, value):
