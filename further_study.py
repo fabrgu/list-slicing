@@ -222,8 +222,9 @@ def custom_reverse(input_list):
         True
 
     """
+    input_list[0:len(input_list)] = input_list[len(input_list)-1::-1]
 
-    pass
+    return None
 
 
 def custom_contains(input_list, value):
@@ -242,8 +243,13 @@ def custom_contains(input_list, value):
         True
 
     """
+    contains_value = False
+    for i in input_list:
+        if i == value:
+            contains_value = True
+            break
 
-    return None
+    return contains_value
 
 
 def custom_equality(some_list, another_list):
@@ -262,7 +268,7 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    return some_list == another_list
 
 
 # This is the part were we actually run the doctests.
